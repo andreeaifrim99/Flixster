@@ -105,6 +105,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
         ImageView ivBackdropImage;
         TextView tvTitle;
         TextView tvOverview;
+        TextView releaseDate;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -113,6 +114,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
             ivBackdropImage = (ImageView) itemView.findViewById(R.id.ivBackdropImage);
             tvOverview = (TextView) itemView.findViewById(R.id.tvOverview);
             tvTitle = (TextView) itemView.findViewById(R.id.tvTitle);
+            releaseDate = (TextView) itemView.findViewById(R.id.releaseDate);
 
             itemView.setOnClickListener(this);
 
